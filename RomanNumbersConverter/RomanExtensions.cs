@@ -47,7 +47,7 @@ namespace RomanNumbersConverter
         }
 
         /// <summary>
-        /// 
+        /// In classic roman numbers are recorded left to right, from largest to smallest digits, similar digits grouped together
         /// </summary>
         /// <param name="number"></param>
         /// <returns></returns>
