@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumbersConverter", "RomanNumbersConverter\RomanNumbersConverter.csproj", "{EA5FEE90-8089-4DB5-85F6-61B6023991C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumbersConverter.ConsoleApp", "RomanNumbersConverter.ConsoleApp\RomanNumbersConverter.ConsoleApp.csproj", "{F2570AEA-0C45-4FA6-BF62-61F5B44AB0FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumbersConverter.Tests", "RomanNumbersConverter.Tests\RomanNumbersConverter.Tests.csproj", "{AAB8A644-0886-42D3-A399-54A386F4EA80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA5FEE90-8089-4DB5-85F6-61B6023991C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA5FEE90-8089-4DB5-85F6-61B6023991C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA5FEE90-8089-4DB5-85F6-61B6023991C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA5FEE90-8089-4DB5-85F6-61B6023991C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2570AEA-0C45-4FA6-BF62-61F5B44AB0FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2570AEA-0C45-4FA6-BF62-61F5B44AB0FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2570AEA-0C45-4FA6-BF62-61F5B44AB0FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2570AEA-0C45-4FA6-BF62-61F5B44AB0FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB8A644-0886-42D3-A399-54A386F4EA80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB8A644-0886-42D3-A399-54A386F4EA80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB8A644-0886-42D3-A399-54A386F4EA80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB8A644-0886-42D3-A399-54A386F4EA80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
