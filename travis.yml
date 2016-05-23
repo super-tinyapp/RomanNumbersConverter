@@ -1,0 +1,12 @@
+sudo: false
+language: csharp
+solution:  RomanNumbersConverter.sln
+addons:
+  apt:
+    packages:
+    - nunit-console
+install:   
+    - nuget restore RomanNumbersConverter.sln
+    - nuget install NUnit.Runners -Version 2.6.3 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release RomanNumbersConverter.sln
