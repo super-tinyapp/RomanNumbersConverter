@@ -36,12 +36,21 @@ namespace RomanNumbersConverter.Tests
             Assert.Throws<ArgumentException>(() => wrongNum.RomanToArabic());
         }
 
-        [Test]
-        public void AttemptingToConvertNotARomanNumberThrowsException()
+        [TestCase("MMXTQWE")]
+        [TestCase("")]
+        [TestCase("BlahBlah")]
+        public void AttemptingToConvertNotARomanNumberThrowsException(string notARomanNumber)
         {
-            string notARomanNumber = "MMXTQWE";
-
             Assert.Throws<ArgumentException>(() => notARomanNumber.RomanToArabic());
+        }
+
+        [TestCase(5000)]
+        [TestCase(0)]
+        [TestCase(-1)]
+        [TestCase(-9999)]
+        public void AttemptingToConvertNumberOutOfRangeThrowsException(int number)
+        {
+            Assert.Throws<ArgumentException>(() => number.ToClassicRoman());
         }
     }
 }

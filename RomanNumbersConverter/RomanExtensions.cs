@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace RomanNumbersConverter
@@ -10,6 +11,9 @@ namespace RomanNumbersConverter
     {
         public static int RomanToArabic(this string numberStr)
         {
+            if (String.IsNullOrWhiteSpace(numberStr))
+                throw new ArgumentException("Invalid number provided.");
+
             int res = 0;
             bool isLastDigit = false;
             bool skipNextDigit = false;
@@ -53,8 +57,8 @@ namespace RomanNumbersConverter
         /// <returns></returns>
         public static string ToClassicRoman(this int number)
         {
-            if (number > 4999)
-                throw new ArgumentException("Can't convert number larger than 4999, as classic roman number can have at most 4 similar digits.");
+            if (number > 4999 || number < 1)
+                throw new ArgumentException("Number must be between 1 and 4999, as classic roman number can have at most 4 similar digits.");
 
             StringBuilder result = new StringBuilder();
 
