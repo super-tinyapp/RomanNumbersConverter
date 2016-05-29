@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("RomanNumbersConverter")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Converting from Roman numbers to Indo-Arabic and vice versa")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("RomanNumbersConverter")]
