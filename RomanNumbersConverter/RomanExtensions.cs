@@ -9,6 +9,11 @@ namespace RomanNumbersConverter
 {
     public static class RomanExtensions
     {
+        /// <summary>
+        /// Convert roman number to integer
+        /// </summary>
+        /// <returns>Integer</returns>
+        /// <param name="numberStr">Roman number</param>
         public static int RomanToArabic(this string numberStr)
         {
             if (String.IsNullOrWhiteSpace(numberStr))
