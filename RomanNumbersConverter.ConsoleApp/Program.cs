@@ -11,7 +11,6 @@ namespace RomanNumbersConverter.ConsoleApp
         static void Main(string[] args)
         {
             string num = "MCMLXXXIX";
-            string num2 = "XXK";
 
             int res = num.RomanToArabic();
             Console.WriteLine(res);
