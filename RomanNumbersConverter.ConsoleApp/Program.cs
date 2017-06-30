@@ -10,18 +10,20 @@ namespace RomanNumbersConverter.ConsoleApp
     {
         static void Main(string[] args)
         {
-            string num = "MCMLXXXIX";
+            
+            string userCommand = "";
+            while (userCommand != "exit")
+            {
+                Console.WriteLine("Please input a value in roman numerals:");
+                userCommand = Console.ReadLine();
+                if (!string.IsNullOrEmpty(userCommand))
+                {
+                    var result = userCommand.RomanToArabic();
+                    Console.WriteLine(result); ;
+                }
 
-            int res = num.RomanToArabic();
-            Console.WriteLine(res);
-
-            int number = 1914;
-
-            string roman = number.ToClassicRoman();
-
-            Console.WriteLine(roman);
-
-            Console.Read();
+            }
+            Console.ReadKey();
         }
     }
 }
