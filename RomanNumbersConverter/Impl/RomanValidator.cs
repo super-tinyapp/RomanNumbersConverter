@@ -21,7 +21,33 @@ namespace RomanNumbersConverter.Impl
                 result.Result = false;
                 result.Message = "You should input someting.";
             }
-            
+
+            var chars = input.ToCharArray();
+
+            RomanNumberSymbol symbolResult;
+
+            for (int i = 0; i < chars.Count(); i++)
+            {
+                bool isValidDigit = Enum.TryParse<RomanNumberSymbol>(chars.ElementAt(i).ToString(), out symbolResult);
+                if (!isValidDigit)
+                {
+                    result.Result = false;
+                    result.Message = "Invalid input, please try again.";
+                }
+            }
+
+            return result;
+        }
+
+
+        private static RomanNumberSymbol GetRomanSymbol(char romanDigit)
+        {
+            RomanNumberSymbol result;
+
+            bool isValidDigit = Enum.TryParse<RomanNumberSymbol>(romanDigit.ToString(), out result);
+            if (!isValidDigit)
+                throw new ArgumentException("Invalid character encountered. Please use only Roman digits (I, V, X, L, C, D, M)");
+
             return result;
         }
     }

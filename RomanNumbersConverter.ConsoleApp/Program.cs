@@ -33,7 +33,7 @@ namespace RomanNumbersConverter.ConsoleApp
                 }
                 
 
-                if (!string.IsNullOrEmpty(userCommand))
+                if (!string.IsNullOrEmpty(userCommand) && validateResult.Result)
                 {
                     var result = userCommand.RomanToArabic();
                     Console.WriteLine(string.Format("Converted: {0}",result.ToString()));
