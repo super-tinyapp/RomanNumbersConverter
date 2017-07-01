@@ -11,7 +11,18 @@ namespace RomanNumbersConverter.Impl
     {
         public ValidateResult Validate(string input)
         {
-            throw new NotImplementedException();
+            ValidateResult result = new ValidateResult();
+            result.Result = true;
+            result.Message = "Great, the input is valid value.";
+
+            if (string.IsNullOrEmpty(input))
+            {
+                result = new ValidateResult();
+                result.Result = false;
+                result.Message = "You should input someting.";
+            }
+            
+            return result;
         }
     }
 }

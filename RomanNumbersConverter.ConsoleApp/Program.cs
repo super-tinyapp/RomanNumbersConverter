@@ -36,7 +36,7 @@ namespace RomanNumbersConverter.ConsoleApp
                 if (!string.IsNullOrEmpty(userCommand))
                 {
                     var result = userCommand.RomanToArabic();
-                    Console.WriteLine(result); ;
+                    Console.WriteLine(result);
                 }
 
             }
