@@ -46,7 +46,6 @@ namespace RomanNumbersConverter.Impl
             return result;
         }
 
-
         private static RomanNumberSymbol GetRomanSymbol(char romanDigit)
         {
             RomanNumberSymbol result;
