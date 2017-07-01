@@ -22,6 +22,13 @@ namespace RomanNumbersConverter.Impl
                 result.Message = "You should input someting.";
             }
 
+            int numberInput;
+            if (int.TryParse(input,out numberInput))
+            {
+                result.Result = false;
+                result.Message = "Invalid input, please try again.";
+            }
+
             var chars = input.ToCharArray();
 
             RomanNumberSymbol symbolResult;
