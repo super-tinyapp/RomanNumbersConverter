@@ -39,6 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contract\IArabicConverter.cs" />
+    <Compile Include="Contract\IRomanValidator.cs" />
+    <Compile Include="Contract\IValidator.cs" />
+    <Compile Include="Contract\IRomanConverter.cs" />
+    <Compile Include="Contract\IRomanNumberConverter.cs" />
+    <Compile Include="Impl\ArabicConverter.cs" />
+    <Compile Include="Impl\ArabicValidator.cs" />
+    <Compile Include="Impl\RomanConverter.cs" />
+    <Compile Include="Impl\RomanValidator.cs" />
     <Compile Include="RomanExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RomanNumberSymbol.cs" />
